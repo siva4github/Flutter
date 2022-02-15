@@ -1,16 +1,19 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
+// ignore_for_file: prefer_const_constructors, deprecated_member_use, avoid_print
 
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+  var questionIndex = 0;
 
   void answerQuestion() {
     print('Answer choosen!');
+    questionIndex++;
   }
 
   @override
@@ -27,7 +30,9 @@ class MyApp extends StatelessWidget {
         body: Column(
           // ignore: prefer_const_literals_to_create_immutables
           children: [
-            Text('The question!'),
+            Text(
+              questions[questionIndex],
+            ),
             RaisedButton(
               child: Text('Answer 1'),
               onPressed: answerQuestion,
