@@ -6,14 +6,24 @@ void main() {
   runApp(MyApp());
 }
 
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() {
+    return MyAppState();
+  }
+}
+
 // ignore: must_be_immutable
-class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+class MyAppState extends State<MyApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
-    print('Answer choosen!');
-    questionIndex++;
+    setState(() {
+      questionIndex++;
+    });
+    print(questionIndex);
   }
 
   @override
