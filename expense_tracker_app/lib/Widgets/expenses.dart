@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:expense_tracker_app/Widgets/expenses_list/expenses_list.dart';
 import 'package:expense_tracker_app/Widgets/new_expense.dart';
 import 'package:expense_tracker_app/models/expense.dart';
