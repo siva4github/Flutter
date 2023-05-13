@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:expense_tracker_app/Widgets/expenses_list/expenses_list.dart';
 import 'package:expense_tracker_app/Widgets/new_expense.dart';
 import 'package:expense_tracker_app/models/expense.dart';
@@ -40,6 +42,12 @@ class _ExpensesState extends State<Expenses> {
     });
   }
 
+  void _removeExpense(Expense expense) {
+    setState(() {
+      _registeredExpenses.remove(expense);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +64,10 @@ class _ExpensesState extends State<Expenses> {
         children: [
           const Text('Tha Chart'),
           Expanded(
-            child: ExpensesList(expenses: _registeredExpenses),
+            child: ExpensesList(
+              expenses: _registeredExpenses,
+              onRemoveExpense: _removeExpense,
+            ),
           )
         ],
       ),
