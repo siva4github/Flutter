@@ -5,7 +5,7 @@ class UIUpdatesDemo extends StatefulWidget {
 
   @override
   StatefulElement createElement() {
-    print('UIUpdatesDemo CREATEELEMENT called');
+    //print('UIUpdatesDemo CREATEELEMENT called');
     return super.createElement();
   }
 
@@ -20,7 +20,7 @@ class _UIUpdatesDemo extends State<UIUpdatesDemo> {
 
   @override
   Widget build(BuildContext context) {
-    print('UIUpdatesDemo BUILD called');
+    //print('UIUpdatesDemo BUILD called');
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Center(
