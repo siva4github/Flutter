@@ -8,7 +8,6 @@ class MealsScreen extends StatelessWidget {
     super.key,
     this.title,
     required this.meals,
-    //required this.onToggleFavorite
   });
 
   final String? title;
@@ -19,7 +18,6 @@ class MealsScreen extends StatelessWidget {
     Navigator.of(context).push(MaterialPageRoute(
         builder: (ctx) => MealDetailsScreen(
               meal: meal,
-              //onToggleFavorite: onToggleFavorite,
             )));
   }
 
