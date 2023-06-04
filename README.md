@@ -16,3 +16,7 @@
     https://riverpod.dev/docs/getting_started
     $ flutter pub add flutter_riverpod
 
+### Http
+    https://pub.dev/packages/http
+    $ flutter pub add http
+
