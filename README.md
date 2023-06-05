@@ -20,3 +20,7 @@
     https://pub.dev/packages/http
     $ flutter pub add http
 
+### UUID
+    https://pub.dev/packages/uuid
+    $ flutter pub add uuid
+
