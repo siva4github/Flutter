@@ -24,3 +24,12 @@
     https://pub.dev/packages/uuid
     $ flutter pub add uuid
 
+### Image Picker
+    https://pub.dev/packages/image_picker
+    $ flutter pub add image_picker
+
+    or
+
+    https://pub.dev/packages/image_picker_plus
+    $ flutter pub add image_picker_plus
+
